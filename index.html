@@ -1,0 +1,101 @@
+<html>
+<head>
+
+<title> Home Page </title>
+ <link rel="stylesheet" href="Asset/Css/Style.css">
+</head>
+<body>
+
+<a name="Top_Page"> </a>
+
+<!--- NAVIGATION BAR START --->
+<div class="topnav">
+  <a class="active" href="index.html"><img src="Asset/Photo/Home_page.png" width="50px"></a>
+  <a href="about_me.html"> About Me </a>
+  <a href="education.html"> Education </a>
+  <a href="family_photo.html"> Family Photo </a>
+  <a href="favourite_movie.html"> Favourite Movie </a>
+  <a href="social_media.html"> Social Media </a>
+</div>
+<!--- NAVIGATION BAR END --->
+
+<br><br>
+  <center>
+<marquee width="80%" direction=right height="100px" scrollamount="12">
+<font color= "#3D550C" face="Arial Nova" size= "30"> <b>*＊✿❀　WELCOME TO MY WEBSITE ❀✿＊* </b> </font>
+</marquee>
+<br><br>
+<br>
+
+<!--- INSERTING VIDEO --->
+   <center>
+   <video width="95%" align="center" autoplay muted loop>
+   <source src="Asset/Video/Sky_opening.MP4" type="video/mp4">
+   </center>
+   </video>
+<br>
+
+<!--- IMAGE INSERT STARTER --->
+   <br><br>
+   <center>
+   <img src="Asset/Photo/Home_image.jpg" width="90%" border="2px">
+<!--- IMAGE INSERT END --->
+
+<br><br><br>
+  <center>
+  <hr color="black" size="3">
+  <h1 style="color:#3D550C" <center> “The moon is beautiful, isn't it?” </center> </h1>
+  <hr color="black" size="3">
+  <br><br>
+
+<center>
+ <font color= "#3D550C" size="5"<i>“The moon is beautiful, isn’t it?” is more poetic way of saying I love you in Japanese language. During Japanese novelist Natsume Soseki’s (1867-1916) teaching years, he supposedly overheard a student translating “I love you” rather awkwardly into its literal and direct translation. Soseki believed—as a product of his time and culture in the Meiji period (1868 to 1912) —that this direct translation rejected Japanese sensibility. Thus, this more subtle, nuanced translation of “the moon is beautiful” was born which has been widely used by literary enthusiasts in modern times. 
+
+ Additionally, there are no written proof of this actual phrase was used by Soseki; there is a document that were found recently that states that his actual words were “The Moon looks blue” as the alternative “I love you.” 
+
+ This series were created with the story in mind. </i> >
+
+<!--- APPLYING JAVA APPLET --->
+<div id="clock">8:10:45</div>
+
+<!--- TO LINK FOR A CURRENT TIME --->
+<script src="clock2.js"></script>
+
+<script>
+setInterval(showTime, 1000);
+function showTime() {
+    let time = new Date();
+    let hour = time.getHours();
+    let min = time.getMinutes();
+    let sec = time.getSeconds();
+    am_pm = "AM";
+  
+    if (hour > 12) {
+        hour -= 12;
+        am_pm = "PM";
+    }
+    if (hour == 0) {
+        hr = 12;
+        am_pm = "AM";
+    }
+  
+    hour = hour < 10 ? "0" + hour : hour;
+    min = min < 10 ? "0" + min : min;
+    sec = sec < 10 ? "0" + sec : sec;
+  
+    let currentTime = hour + ":" 
+            + min + ":" + sec + am_pm;
+  
+    document.getElementById("clock")
+            .innerHTML = currentTime;
+}
+showTime();
+</script>
+
+<a href="#Top_Page">
+<center>
+<img src="Asset/Photo/Arrow_up.png" width="30px">
+<br><br>
+
+</body>
+</html>
